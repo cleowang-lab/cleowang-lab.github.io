@@ -1,0 +1,3663 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: May 14, 2025 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.19d182e349a25f51fa52efb924a57a8c.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=143314205"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', '143314205', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Chuchu WANG" />
+
+
+
+
+
+  
+
+<meta name="description" content="A highly-customizable Hugo research group theme powered by Wowchemy website builder." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://cleowang-lab.github.io/" />
+<link rel="canonical" href="https://cleowang-lab.github.io/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu63cbad380e91b3061afce412f5f173ce_62276_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu63cbad380e91b3061afce412f5f173ce_62276_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#007C48" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://cleowang-lab.github.io/media/logo_huc1e8bf6e3a0def47b02e7ddbc8513fba_29358_300x300_fit_lanczos_3.png" />
+<meta property="og:site_name" content="Wang Lab" />
+<meta property="og:url" content="https://cleowang-lab.github.io/" />
+<meta property="og:title" content="Wang Lab" />
+<meta property="og:description" content="A highly-customizable Hugo research group theme powered by Wowchemy website builder." /><meta property="og:image" content="https://cleowang-lab.github.io/media/logo_huc1e8bf6e3a0def47b02e7ddbc8513fba_29358_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta property="og:updated_time" content="2023-11-01T00:00:00&#43;00:00" />
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://cleowang-lab.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://cleowang-lab.github.io/"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://cleowang-lab.github.io/",
+  "name": "Wang Lab",
+  "logo": "https://cleowang-lab.github.io/media/logo_huc1e8bf6e3a0def47b02e7ddbc8513fba_29358_192x192_fit_lanczos_3.png",
+  
+  
+  
+  
+  "url": "https://cleowang-lab.github.io/"
+}
+</script>
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Wang Lab" />
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#007C48",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#007C48"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  
+  <title>Wang Lab</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="3976528693a0108357f4928017600865" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c51bb6301bb2be5edd35b3630c50ed3a.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_huc1e8bf6e3a0def47b02e7ddbc8513fba_29358_0x70_resize_lanczos_3.png" alt="Wang Lab"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_huc1e8bf6e3a0def47b02e7ddbc8513fba_29358_0x70_resize_lanczos_3.png" alt="Wang Lab"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#research" data-target="#research"><span>RESEARCH</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publication" data-target="#publication"><span>PUBLICATION</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#news" data-target="#news"><span>NEWS</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#team" data-target="#team"><span>TEAM</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact" data-target="#contact"><span>CONTACT</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://github.com/jaspershen-lab" data-toggle="tooltip" data-placement="bottom" title="Follow us on GitHub" target="_blank" rel="noopener" aria-label="Follow us on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/xiaotaoshen1990" data-toggle="tooltip" data-placement="bottom" title="Follow us on X" target="_blank" rel="noopener" aria-label="Follow us on X">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+<span class="js-widget-page d-none"></span>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+<section id="section-slider" class="home-section wg-slider   carousel slide"  data-ride="carousel" data-interval="5000">
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<ol class="carousel-indicators">
+  
+  <li data-target="#section-slider" data-slide-to="0" class="active"></li>
+  
+  <li data-target="#section-slider" data-slide-to="1" ></li>
+  
+  <li data-target="#section-slider" data-slide-to="2" ></li>
+  
+</ol>
+
+
+<div class="carousel-inner">
+  
+
+    
+    
+
+    
+
+    
+    
+      
+    
+
+    
+
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="carousel-item active fullscreen" style=" background-color: #666;background-image: url(&#39;https://cleowang-lab.github.io/media/research.jpg&#39;); background-repeat: no-repeat; background-position: center; background-size: cover; ">
+    <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="-webkit-backdrop-filter: brightness(0.7); backdrop-filter: brightness(0.7);">
+      
+      <div class="wg-hero dark container" style="margin-left: 6rem; margin-right: 6rem; text-align: center;">
+          <h1 class="hero-title ">
+            👋 Welcome to Wang Lab@NTU, Singapore 👋
+          </h1>
+
+          
+
+          
+            
+            
+            
+              
+            
+            <p>
+              <a href="../research/" class="btn btn-light btn-lg mt-3"><i class="fas fa-flask" style="padding-right: 10px;"></i>Research</a>
+            </p>
+          
+        </div>
+    </div>
+  </div>
+  
+
+    
+    
+
+    
+
+    
+    
+      
+    
+
+    
+
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="carousel-item fullscreen" style=" background-color: #333;background-image: url(&#39;https://cleowang-lab.github.io/media/group_photo2.jpg&#39;); background-repeat: no-repeat; background-position: center; background-size: cover; ">
+    <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="-webkit-backdrop-filter: brightness(0.8); backdrop-filter: brightness(0.8);">
+      
+      <div class="wg-hero dark container" style="margin-left: 6rem; margin-right: 6rem; text-align: center;">
+          <h1 class="hero-title ">
+            🌍 Meet Our Team Members 🌍
+          </h1>
+
+          
+
+          
+            
+            
+            
+              
+            
+            <p>
+              <a href="../team/" class="btn btn-light btn-lg mt-3"><i class="fas fa-graduation-cap" style="padding-right: 10px;"></i>Team</a>
+            </p>
+          
+        </div>
+    </div>
+  </div>
+  
+
+    
+    
+
+    
+
+    
+    
+      
+    
+
+    
+
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="carousel-item fullscreen" style=" background-color: #555;background-image: url(&#39;https://cleowang-lab.github.io/media/contact_us.jpg&#39;); background-repeat: no-repeat; background-position: center; background-size: cover; ">
+    <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="-webkit-backdrop-filter: brightness(0.8); backdrop-filter: brightness(0.8);">
+      
+      <div class="wg-hero dark container" style="margin-left: 6rem; margin-right: 6rem; text-align: center;">
+          <h1 class="hero-title ">
+            ☕️ Talking and Collaboration ☕️
+          </h1>
+
+          
+
+          
+            
+            
+            
+              
+            
+            <p>
+              <a href="../contact/" class="btn btn-light btn-lg mt-3">📨 Contact</a>
+            </p>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<a class="carousel-control-prev" href="#section-slider" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#section-slider" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+
+  
+
+  
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="research" class="home-section wg-collection  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+      
+        <div class="section-heading col-12 mb-3 text-center">
+          <h1 class="mb-0">🔬 RESEARCH</h1>
+          <p class="mt-1">👉 <a href="./research/">Detailed Research</a></p>
+        </div>
+      
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 ">
+
+  Our research is focused on the development of computational methods for the analysis of <u>multi-omics data</u>, with a particular emphasis on <u>metabolomics and microbiome data</u>. We are also interested in the application of these methods to <u>precision medicine, aging, pregnancy, and other health-related areas</u>.
+
+  
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="col-lg-12 mb-5 view-showcase">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <div class="section-subheading article-title mb-0 mt-0">🧑 Aging and Aging-Related Diseases</div>
+
+      
+      <div class="article-style">
+        <p>Aging is a complex biological process characterized by a gradual decline in physiological functions, which increases susceptibility to diseases and death. This process is influenced by a myriad of genetic, environmental, and lifestyle factors. Our research on aging and aging-related diseases like AD and PD is utilizing multi-omics and wearable technology to gain a comprehensive understanding of the aging process. The ultimate goal of our research is to develop predictive models for aging and aging-related diseases. These models aim to integrate multi-omics data with information from wearable devices, along with clinical and demographic information. Machine learning and artificial intelligence algorithms are employed to analyze this vast and complex dataset, with the objective of identifying patterns and predictive biomarkers. In summary, our lab&rsquo;s research represents a cutting-edge, interdisciplinary approach to studying aging, leveraging the power of multi-omics and wearable technology to build comprehensive predictive models for aging and its related diseases. This research not only deepens our understanding of the biological processes of aging but also holds promise for improving health outcomes in the aging population.</p>
+      </div>
+      
+
+      <div class="btn-links">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-6 order-first ">
+      
+
+      
+        
+        
+          <img src="/research_brief/aging/featured_huac00faa19ca3d3b65be2f710b6f51a31_2587583_540x0_resize_q75_h2_lanczos.webp" height="309" width="540"
+              alt="🧑 Aging and Aging-Related Diseases" loading="lazy">
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+<div class="col-lg-12 mb-5 view-showcase">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <div class="section-subheading article-title mb-0 mt-0">🤰 Maternal and Child Health 👶</div>
+
+      
+      <div class="article-style">
+        <p>Maternal and Child Health (MCH) is a critical public health domain focused on the health and well-being of mothers and children. Our lab&rsquo;s research in Maternal and Child Health, particularly concerning preterm birth, is employing multi-omics and wearable technology to deepen understanding and improve outcomes. Our lab is likely integrating data from these multi-omics analyses with information collected from wearable devices to create a comprehensive picture of maternal and fetal health. This integrated approach can identify patterns and risk factors associated with preterm birth and other pregnancy-related complications. Advanced data analysis techniques, including machine learning and AI, are used to analyze these complex datasets, aiming to develop predictive models for adverse pregnancy outcomes.</p>
+      </div>
+      
+
+      <div class="btn-links">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-6 order-first order-md-2">
+      
+
+      
+        
+        
+          <img src="/research_brief/pregnancy/featured_hu7ba0220a8bb97e35971c562685f8ca15_351338_540x0_resize_q75_h2_lanczos.webp" height="309" width="540"
+              alt="🤰 Maternal and Child Health 👶" loading="lazy">
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="col-lg-12 mb-5 view-showcase">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <div class="section-subheading article-title mb-0 mt-0">💻 ⌚ 🧬 Multi-Omics Data Integration</div>
+
+      
+      <div class="article-style">
+        <p>Our lab&rsquo;s research focuses on integrating multi-omics and wearable data to advance the field of precision medicine, with a special emphasis on understanding the intricate interplay between the microbiome and metabolome. Our research likely involves analyzing how the microbiome affects the metabolome and vice versa. For instance, certain metabolites produced by the microbiome can impact human metabolic pathways, while changes in the host&rsquo;s metabolism can alter the microbiome composition. Understanding this bidirectional relationship is crucial for developing targeted therapeutic strategies. The ultimate goal of our lab&rsquo;s research is to use the integrated data from multi-omics and wearables for precision medicine. By understanding the complex interactions between the microbiome and metabolome, and how they relate to individual physiological states, our aim to develop personalized healthcare strategies. This could involve tailored dietary recommendations, customized probiotic or prebiotic therapies, or specific drug treatments based on an individual&rsquo;s unique microbiome-metabolome profile.</p>
+      </div>
+      
+
+      <div class="btn-links">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-6 order-first ">
+      
+
+      
+        
+        
+          <img src="/research_brief/multi-omics/featured_hud9f5187b72c49b081e21fbfcc6a1e77f_335382_540x0_resize_q75_h2_lanczos.webp" height="309" width="540"
+              alt="💻 ⌚ 🧬 Multi-Omics Data Integration" loading="lazy">
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+  
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="publication" class="home-section wg-collection  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+      
+        <div class="section-heading col-12 mb-3 text-center">
+          <h1 class="mb-0">📃 PUBLICATION</h1>
+          <p class="mt-1">👉 <a href="./publication/">All Publications</a></p>
+        </div>
+      
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 ">
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/publication/nonlinear-dynamics-of-multi-omics-profiles-during-human-aging/" >Nonlinear dynamics of multi-omics profiles during human aging</a>
+    </div>
+
+    
+    <a href="/publication/nonlinear-dynamics-of-multi-omics-profiles-during-human-aging/"  class="summary-link">
+      <div class="article-style">
+        This research demonstrates that functions and risks of aging-related diseases change nonlinearly across the human lifespan and provides insights into the molecular and biological pathways involved in these changes.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/author/xiaotao-shen/">Xiaotao Shen</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span class="author-highlighted">
+      <a href="/author/chuchu-wang/">Chuchu WANG</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/xin-zhou/">Xin Zhou</a></span>, <span >
+      <a href="/author/wenyu-zhou/">Wenyu Zhou</a></span>, <span >
+      <a href="/author/daniel-hornburg/">Daniel Hornburg</a></span>, <span >
+      <a href="/author/si-wu/">Si Wu</a></span>, <span >
+      <a href="/author/michael-snyder/">Michael Snyder</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi-org.stanford.idm.oclc.org/10.1038/s43587-024-00692-2" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/Nonlinear%20dynamics%20of%20multi-omics%20profiles%20during%20human%20aging.pdf" >
+    <i class="fas fa-file-pdf mr-1"></i>PDF</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+      
+      <a href="/publication/nonlinear-dynamics-of-multi-omics-profiles-during-human-aging/" >
+        <img src="/publication/nonlinear-dynamics-of-multi-omics-profiles-during-human-aging/featured_hu902c62cc6228370c71bca0f8139d21af_1743592_150x0_resize_q75_h2_lanczos.webp" height="158" width="150"
+            alt="Nonlinear dynamics of multi-omics profiles during human aging" loading="lazy">
+      </a>
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/publication/structure-and-topography-of-the-synaptic-v-atpasesynaptophysin-complex/" >Structure and topography of the synaptic V-ATPase–synaptophysin complex</a>
+    </div>
+
+    
+    <a href="/publication/structure-and-topography-of-the-synaptic-v-atpasesynaptophysin-complex/"  class="summary-link">
+      <div class="article-style">
+        Synaptic vesicles are organelles with a precisely defined protein and lipid composition1,2, yet the molecular mechanisms for the …
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/author/chuchu-wang/">Chuchu WANG</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/wenhong-jiang/">Wenhong Jiang</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/jeremy-leitz/">Jeremy Leitz</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/kailu-yang/">Kailu Yang</a></span>, <span >
+      <a href="/author/luis-esquivies/">Luis Esquivies</a></span>, <span >
+      <a href="/author/xing-wang/">Xing Wang</a></span>, <span >
+      <a href="/author/xiaotao-shen/">Xiaotao Shen</a></span>, <span >
+      <a href="/author/richard-held/">Richard Held</a></span>, <span >
+      <a href="/author/daniel-j.-adams/">Daniel J. Adams</a></span>, <span >
+      <a href="/author/tamara-basta/">Tamara Basta</a></span>, <span >
+      <a href="/author/lucas-hampton/">Lucas Hampton</a></span>, <span >
+      <a href="/author/ruiqi-jian/">Ruiqi Jian</a></span>, <span >
+      <a href="/author/lihua-jiang/">Lihua Jiang</a></span>, <span >
+      <a href="/author/michael-h.-b.-stowell/">Michael H. B. Stowell</a></span>, <span >
+      <a href="/author/wolfgang-baumeister/">Wolfgang Baumeister</a></span>, <span >
+      <a href="/author/qiang-guo/">Qiang Guo</a></span>, <span >
+      <a href="/author/axel-t.-brunger/">Axel T. Brunger</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.nature.com/articles/s41586-024-07610-x" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+      
+      <a href="/publication/structure-and-topography-of-the-synaptic-v-atpasesynaptophysin-complex/" >
+        <img src="/publication/structure-and-topography-of-the-synaptic-v-atpasesynaptophysin-complex/featured_hua008cf2e1e27a54ba877238b69d8c02d_1048964_150x0_resize_q75_h2_lanczos.webp" height="200" width="150"
+            alt="Structure and topography of the synaptic V-ATPase–synaptophysin complex" loading="lazy">
+      </a>
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/publication/multi-omics-microsampling-for-the-profiling-of-lifestyle-associated-changes-in-health/" >Multi-omics microsampling for the profiling of lifestyle-associated changes in health</a>
+    </div>
+
+    
+    <a href="/publication/multi-omics-microsampling-for-the-profiling-of-lifestyle-associated-changes-in-health/"  class="summary-link">
+      <div class="article-style">
+        Multi-omics microsampling for the profiling of lifestyle-associated changes in health
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/author/xiaotao-shen/">Xiaotao Shen</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/ryan-kellogg/">Ryan Kellogg</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/daniel-j-panyard/">Daniel J Panyard</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/nasim-bararpour/">Nasim Bararpour</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/kevin-erazo-castillo/">Kevin Erazo Castillo</a></span>, <span >
+      <a href="/author/brittany-lee-mcmullen/">Brittany Lee-McMullen</a></span>, <span >
+      <a href="/author/alireza-delfarah/">Alireza Delfarah</a></span>, <span >
+      <a href="/author/jessalyn-ubellacker/">Jessalyn Ubellacker</a></span>, <span >
+      <a href="/author/sara-ahadi/">Sara Ahadi</a></span>, <span >
+      <a href="/author/yael-rosenberg-hasson/">Yael Rosenberg-Hasson</a></span>, <span >
+      <a href="/author/ariel-ganz/">Ariel Ganz</a></span>, <span >
+      <a href="/author/kevin-contrepois/">Kévin Contrepois</a></span>, <span >
+      <a href="/author/basil-michael/">Basil Michael</a></span>, <span >
+      <a href="/author/ian-simms/">Ian Simms</a></span>, <span class="author-highlighted">
+      <a href="/author/chuchu-wang/">Chuchu WANG</a></span>, <span >
+      <a href="/author/daniel-hornburg/">Daniel Hornburg</a></span>, <span >
+      <a href="/author/michael-snyder/">Michael Snyder</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.nature.com/articles/s41551-022-00999-8" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/Multi-omics%20microsampling%20for%20the%20profiling%20of%20lifestyle-associated%20changes%20in%20health.pdf" >
+    <i class="fas fa-file-pdf mr-1"></i>PDF</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+      
+      <a href="/publication/multi-omics-microsampling-for-the-profiling-of-lifestyle-associated-changes-in-health/" >
+        <img src="/publication/multi-omics-microsampling-for-the-profiling-of-lifestyle-associated-changes-in-health/featured_hube2d9386812542495076d2bfdfe2b387_598408_150x0_resize_q75_h2_lanczos_3.webp" height="71" width="150"
+            alt="Multi-omics microsampling for the profiling of lifestyle-associated changes in health" loading="lazy">
+      </a>
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/publication/massdatabase-utilities-for-the-operation-of-the-public-compound-and-pathway-database/" >massDatabase utilities for the operation of the public compound and pathway database</a>
+    </div>
+
+    
+    <a href="/publication/massdatabase-utilities-for-the-operation-of-the-public-compound-and-pathway-database/"  class="summary-link">
+      <div class="article-style">
+        massDatabase utilities for the operation of the public compound and pathway database
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/author/xiaotao-shen/">Xiaotao Shen</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span class="author-highlighted">
+      <a href="/author/chuchu-wang/">Chuchu WANG</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/michael-snyder/">Michael Snyder</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://academic.oup.com/bioinformatics/article/38/19/4650/6659093?login=false" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/massDatabase%20utilities%20for%20the%20operation%20of%20the%20public%20compound%20and%20pathway%20database.pdf" >
+    <i class="fas fa-file-pdf mr-1"></i>PDF</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+      
+      <a href="/publication/massdatabase-utilities-for-the-operation-of-the-public-compound-and-pathway-database/" >
+        <img src="/publication/massdatabase-utilities-for-the-operation-of-the-public-compound-and-pathway-database/featured_hud8e2c8cfb3bcec6775680eab701f6320_1312944_150x0_resize_q75_h2_lanczos_3.webp" height="70" width="150"
+            alt="massDatabase utilities for the operation of the public compound and pathway database" loading="lazy">
+      </a>
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/publication/deep-learning-based-pseudo-mass-spectrometry-imaging-analysis-for-precision-medicine/" >Deep learning-based pseudo-mass spectrometry imaging analysis for precision medicine</a>
+    </div>
+
+    
+    <a href="/publication/deep-learning-based-pseudo-mass-spectrometry-imaging-analysis-for-precision-medicine/"  class="summary-link">
+      <div class="article-style">
+        massDatabase utilities for the operation of the public compound and pathway database
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/author/xiaotao-shen/">Xiaotao Shen</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/wei-shao/">Wei Shao</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span class="author-highlighted">
+      <a href="/author/chuchu-wang/">Chuchu WANG</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/author/liang-liang/">Liang Liang</a></span>, <span >
+      <a href="/author/songjie-chen/">Songjie Chen</a></span>, <span >
+      <a href="/author/sai-zhang/">Sai Zhang</a></span>, <span >
+      <a href="/author/mirabela-rusu/">Mirabela Rusu</a></span>, <span >
+      <a href="/author/michael-snyder/">Michael Snyder</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1093/bib/bbac331" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/Deep%20learning-based%20pseudo-mass%20spectrometry%20imaging%20analysis%20for%20precision%20medicine.pdf" >
+    <i class="fas fa-file-pdf mr-1"></i>PDF</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+      
+      <a href="/publication/deep-learning-based-pseudo-mass-spectrometry-imaging-analysis-for-precision-medicine/" >
+        <img src="/publication/deep-learning-based-pseudo-mass-spectrometry-imaging-analysis-for-precision-medicine/featured_huc4ac9be210101251c02876fa092b5f2a_159959_150x0_resize_q75_h2_lanczos_3.webp" height="58" width="150"
+            alt="Deep learning-based pseudo-mass spectrometry imaging analysis for precision medicine" loading="lazy">
+      </a>
+    
+  </div>
+</div>
+
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+
+    
+    
+    
+    
+      
+    
+
+    
+
+    <div class="see-all">
+      <a href="/publication/">
+        All publications
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="news" class="home-section wg-collection  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  ">
+    
+      
+        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+          <h1 class="mb-0">📰 NEWS</h1>
+          <p class="mt-1">👉 <a href="./news/">All News</a></p>
+        </div>
+      
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="view-list view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="/news/2023-11-23-recruitment/" >2025-05-14 Opportunities in Wang Lab</a>
+
+  
+
+  
+
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="view-list view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="/news/2024-8-14-nature-aging/" >2024-08-14 Paper accepted in Nature Aging</a>
+
+  
+
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pubmed.ncbi.nlm.nih.gov/39143318/" target="_blank" rel="noopener">
+    <i class="fas fa-link mr-1"></i>Link</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/Nonlinear%20dynamics%20of%20multi-omics%20profiles%20during%20human%20aging.pdf" >
+    <i class="fas fa-file-pdf mr-1"></i>PDF</a>
+
+
+  </div>
+  
+
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="view-list view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="/news/2024-6-5-nature/" >2024-06-05 Paper accepted in Nature</a>
+
+  
+
+  
+
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="team" class="home-section wg-people  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+    <div class="section-heading col-12 mb-3 text-center">
+      <h1 class="mb-0">👥 TEAM</h1>
+      <p class="mt-1">👉 <a href="./team/">All Team Members</a></p>
+    </div>
+  
+
+  
+
+  
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="col-md-12">
+        <h2 class="mb-4">Principal Investigator</h2>
+      </div>
+    
+
+    
+      
+      
+      
+      
+        
+      
+      <div class="col-12 col-sm-auto people-person">
+        
+        
+          
+          
+        
+        
+          
+          <a href="/author/chuchu-wang/"><img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/author/chuchu-wang/avatar_hud842df2f900d84499d52ea54239a246f_1107270_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
+        
+
+        <div class="portrait-title">
+          <h2><a href="/author/chuchu-wang/">Chuchu WANG</a></h2>
+          
+          <h3>Nanyang Assistant Professor</h3>
+          <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:chuchu.wang2025@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/cleowang" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://x.com/ChuchuWang0820" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?hl=en&amp;user=1SQy-gQAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/chuchu-wang-71331190/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://jaspershen.github.io/file/XiaotaoShen_CV.pdf" target="_blank" rel="noopener">
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-2015-7331" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+</ul>
+
+          
+        </div>
+      </div>
+    
+  
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+  
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+  
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+  
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="col-md-12">
+        <h2 class="mb-4">Join US</h2>
+      </div>
+    
+
+    
+      
+      
+      
+      
+        
+      
+      <div class="col-12 col-sm-auto people-person">
+        
+        
+          
+          
+        
+        
+          
+          <a href="/author/we-need-you/"><img width="270" height="270" loading="lazy" class="avatar avatar-circle" src="/author/we-need-you/avatar_hu26664859c19d1fa6edf803913a3e4075_1981807_270x270_fill_lanczos_center_3.png" alt="Avatar"></a>
+        
+
+        <div class="portrait-title">
+          <h2><a href="/author/we-need-you/">We Need You</a></h2>
+          
+          
+          <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jaspershen-lab" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/xiaotaoshen1990" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+</ul>
+
+          
+        </div>
+      </div>
+    
+  
+</div>
+
+
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact" class="home-section wg-contact  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  ">
+    
+      
+        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+          <h1 class="mb-0">📨 CONTACT</h1>
+          
+        </div>
+      
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+      
+      
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" action="https://formspree.io/f/xpzgpjby"   >
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Message</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+        </div>
+        
+        <div class="d-none">
+          <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send</button>
+      </form>
+    </div>
+  
+
+  <ul class="fa-ul">
+
+    
+    <li>
+      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email"><a href="mailto:xiaotao.shen@outlook.com">xiaotao.shen@outlook.com</a></span>
+    </li>
+    
+
+    
+    <li>
+      <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+      <span id="person-telephone"><a href="tel:&#43;65%2083042333">&#43;65 83042333</a></span>
+    </li>
+    
+
+    
+    
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address">59 Nanyang Dr, Singapore, Singapore 636921</span>
+      </li>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
+      <a href="https://x.com/ChuchuWang0820" target="_blank" rel="noopener"></a>
+    </li>
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <i class="fa-li fab fa-github fa-2x" aria-hidden="true"></i>
+      <a href="https://github.com/cleowang-lab" target="_blank" rel="noopener"></a>
+    </li>
+    
+
+  </ul>
+
+  
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-tag_cloud" class="home-section wg-tag-cloud dark "  >
+ <div class="home-section-bg " >
+   <video class="bg-video " playsinline="" preload="auto" loop="" muted autoplay="" tabindex="-1" width="100%" height="100%" src="/media/tags_background.mp4" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="col-12 text-center">
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    <div class="tag-cloud">
+      
+        
+        
+        
+        <a href="/tag/mass-spectrometry/" style="font-size:1.5321501487247682rem">Mass Spectrometry</a>
+      
+        
+        
+        
+        <a href="/tag/metabolomics/" style="font-size:2.2643002974495365rem">Metabolomics</a>
+      
+        
+        
+        
+        <a href="/tag/microbiome/" style="font-size:1.5321501487247682rem">Microbiome</a>
+      
+        
+        
+        
+        <a href="/tag/multi-omics/" style="font-size:1.5321501487247682rem">Multi-omics</a>
+      
+        
+        
+        
+        <a href="/tag/others/" style="font-size:0.8rem">Others</a>
+      
+    </div>
+  
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  <hr>
+
+  <p>
+    Find us here:
+    &nbsp;
+    <i class="fa-brands fa-github"></i> <a href="https://github.com/jaspershen-lab" target="_blank" rel="noopener">GitHub</a>
+&nbsp;
+        <i class="fa-brands fa-weixin"></i> <a href="https://jaspershen.github.io/image/wechat_QR.jpg" target="_blank" rel="noopener">WeChat</a>
+
+    &nbsp;
+        <i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/xiaotaoshen1990" target="_blank" rel="noopener">X</a>
+        
+    &nbsp;
+        <i class="fa-solid fa-envelope"></i> <a href="mailto:shenxt1990@outlook.com" target="_blank" rel="noopener">Email</a>  
+   
+    </p>
+
+<center>
+  <p>
+<i class="fa-solid fa-location-dot"></i> Address: <a href="https://maps.app.goo.gl/pcizQc8QdorHMMvB6" target="_blank" rel="noopener">59 Nanyang Dr, Singapore 636921</a>
+</p>
+</center>
+
+
+
+<br>
+
+<center>
+  <p>
+<i class="fa-solid fa-handshake"></i> Honored supported by:
+</p>
+</center>
+
+    <div style="display: flex; justify-content: space-between; padding: 20px;">
+          
+            <div style="flex: 1;">
+      <center>
+    <a href="https://www.ntu.edu.sg/" target="_blank"><img src="https://jaspershen-lab.github.io/image/ntu_logo.png" alt="logo" class="center" width="80%" height="100"></a>
+    </center>
+            </div>
+            
+    
+            <div style="flex: 1;">
+      <center>
+    <a href="https://www.ntu.edu.sg/medicine" target="_blank"><img src="https://jaspershen-lab.github.io/image/lkcmedicine.png" alt="logo" class="center" width="60%" height="50"></a>
+    </center>
+            </div>
+            
+    
+            <div style="flex: 1;">
+      <center>
+            <a href="https://www.ntu.edu.sg/cceb" target="_blank"><img src="https://jaspershen-lab.github.io/image/cceb_logo.png" alt="logo" class="center" width="35%" height="40"></a>
+    </center>
+            </div>
+
+  
+        </div>
+
+      <p class="powered-by">
+      
+
+ 
+   
+
+    <div style="display: flex; justify-content: space-between; padding: 20px;">
+          
+            <div style="flex: 1;">
+            </div>
+            
+    
+            <div style="flex: 1;">
+            </div>
+            
+                
+            <div style="flex: 1;">
+              <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=yqvc_qUTqeZAQuPNuedk_Ln_lEiAPfnT5br9KDkIZoo"></script>
+            </div>
+            
+                            
+            <div style="flex: 1;">
+            </div>
+            
+                            
+            <div style="flex: 1;">
+            </div>
+
+        </div>
+
+  
+      <hr>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Wang Lab @ <a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener">Nanyang Technological University</a>
+  </p>
+  
+
+
+
+
+  
+  
+</footer>
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <script id="dsq-count-scr" src="https://blog-at8qrhng8b.disqus.com/count.js" async></script>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.53e2d4aa5b5aee6f858cf53dc1025ec4.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
